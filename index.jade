@@ -1,28 +1,32 @@
 
-for experiment in experiments
-  section.experiment
-    div.experiment-summary
-      div.preview-image(style="background-image: url(#{ experiment.image })")
-      div.description
-        h2 #{ experiment.title}
-        p #{ experiment.shortDesc } 
-          a.show-details details
-      div.experiment-status
-        if experiment.state === "enabled"
-          button.button.enabled enabled
-        else
-          button.button.disabled enable
-    div.experiment-details.hidden
-      section.details-section
-        h3 Contribute &amp; Contact
-        ul
-          li Contact: <a href="">#{experiment.contact}</a>
-          li Contribute <a href="">#{experiment.repo}</a>
-      section.details-section
-        h3 Data Collected
-        ul.collected-data
-          for datum in experiment.collectedData
-            li #{ datum }
-         p.legal <span class="emphasis">#{ experiment.title}</span> 
-          | collects data in accordance with the #{ title } 
-          | <a href="#">Terms of Service</a> and <a href="#">Privacy Notice</a>
+header#main-header
+  .fluid-container
+    h1 #{ title }
+.outer-container
+  for experiment in experiments
+    section.experiment
+      div.experiment-summary
+        div.preview-image(style="background-image: url(#{ experiment.image })")
+        div.description
+          h2 #{ experiment.title}
+          p #{ experiment.shortDesc } 
+            a.show-details details
+        div.experiment-status
+          if experiment.state === "enabled"
+            button.button.enabled enabled
+          else
+            button.button.disabled enable
+      div.experiment-details.hidden
+        section.details-section
+          h3 Contribute &amp; Contact
+          ul
+            li Contact: <a href="">#{experiment.contact}</a>
+            li Contribute <a href="">#{experiment.repo}</a>
+        section.details-section
+          h3 Data Collected
+          ul.collected-data
+            for datum in experiment.collectedData
+              li #{ datum }
+           p.legal <span class="emphasis">#{ experiment.title}</span> 
+            | collects data in accordance with the #{ title } 
+            | <a href="#">Terms of Service</a> and <a href="#">Privacy Notice</a>

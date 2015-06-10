@@ -6,10 +6,6 @@ html
     link(rel="stylesheet" href="styles/vendor/normalize.css")
     link(rel="stylesheet" href="styles/main.css")
   body
-    header#main-header
-      .fluid-container
-        h1 #{ title }
-    .outer-container
-      != yield
-    script(src="scripts/vendor/jquery.min.js")
-    script(src="scripts/main.js")
+    != yield
+  script(src="scripts/vendor/jquery.min.js")
+  script(src="scripts/main.js")
