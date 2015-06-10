@@ -1,0 +1,45 @@
+{
+  "globals": {
+    "title": "Firefox Experiments Dashboard",
+    "desc": "A place to test the futures of Firefox",
+    "experiments": [
+      {
+        "title" : "Universal Search",
+        "shortDesc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus vero sit odit hic consequuntur maiores reprehenderit pariatur quos fuga dolores, autem, exercitationem, et porro officia enim tempora omnis ipsam harum?",
+        "image" : "images/u-search-mvp.png",
+        "state" : "enabled",
+        "contact": "nchapman@mozilla.com",
+        "repo": "https://github.com/mozilla/universal-search-content/",
+        "collectedData" : [
+          "Information about search behavior", 
+          "Sync connectivity", 
+          "Session duration"
+        ]
+      },
+      {
+        "title" : "Collections",
+        "shortDesc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus vero sit odit hic consequuntur maiores reprehenderit pariatur quos fuga dolores, autem, exercitationem, et porro officia enim tempora omnis ipsam harum?",
+        "image" : "images/collections.png",
+        "state" : "disabled",
+        "contact": "_6a68@mozilla.com",
+        "repo": "https://github.com/mozilla/collections/",
+        "collectedData" : [
+          "Number of Bookmarks and Folders", 
+          "Number of items in History"
+        ]
+      },
+      {
+        "title" : "Password manager",
+        "shortDesc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus vero sit odit hic consequuntur maiores reprehenderit pariatur quos fuga dolores, autem, exercitationem, et porro officia enim tempora omnis ipsam harum?",
+        "image" : "images/password.png",
+        "state" : "enabled",
+        "contact": "rfeeley@mozilla.com",
+        "repo": "https://github.com/mozilla/passwords/",
+        "collectedData" : [
+          "Number of stored passwords", 
+          "Interactions with password manager UI"
+        ]
+      }
+    ]
+  }
+}
