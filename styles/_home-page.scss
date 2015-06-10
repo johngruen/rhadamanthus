@@ -32,6 +32,12 @@
       flex: 0 0 262px;
     }
 
+    #logo-search-2 {
+      background: url(../images/fl-2.png) no-repeat center center;
+      background-size: 466px auto;
+      flex: 0 0 262px;
+    }
+
     #snippet {
       font-family: sans-serif;
       font-size: 12px;
@@ -46,6 +52,7 @@
         background-size: 50px 50px;
         opacity: 0;
         animation: pop-in 250ms forwards;
+        animation-delay: 250ms;
       }
 
       #copy {
